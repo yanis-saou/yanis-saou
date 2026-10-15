@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="banner.svg" alt="Yanis Saou" width="100%"/>
+<img src="design.svg" alt="Yanis Saou" width="100%"/>
 
 </div>
