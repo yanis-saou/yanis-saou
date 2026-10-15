@@ -1,51 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1200"
-     height="900"
-     viewBox="0 0 1200 900">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="920" viewBox="0 0 1260 920">
 <defs>
-
 <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
-  <stop offset="0%" stop-color="#22d3ee"/>
-  <stop offset="50%" stop-color="#818cf8"/>
-  <stop offset="100%" stop-color="#e879f9"/>
+<stop offset="0%" stop-color="#22d3ee"/>
+<stop offset="50%" stop-color="#818cf8"/>
+<stop offset="100%" stop-color="#e879f9"/>
 </linearGradient>
-
 <linearGradient id="cyanPink" x1="0%" y1="0%" x2="100%" y2="0%">
-  <stop offset="0%" stop-color="#22d3ee"/>
-  <stop offset="100%" stop-color="#d946ef"/>
+<stop offset="0%" stop-color="#22d3ee"/>
+<stop offset="100%" stop-color="#d946ef"/>
 </linearGradient>
-
 <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
-  <stop offset="0%" stop-color="#0b1023"/>
-  <stop offset="100%" stop-color="#070a16"/>
+<stop offset="0%" stop-color="#0b1023"/>
+<stop offset="100%" stop-color="#070a16"/>
 </linearGradient>
-
+<linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#0d1428"/>
+<stop offset="100%" stop-color="#070a16"/>
+</linearGradient>
 <radialGradient id="bgGlow" cx="70%" cy="35%" r="70%">
-  <stop offset="0%" stop-color="#172554"/>
-  <stop offset="55%" stop-color="#0b1023"/>
-  <stop offset="100%" stop-color="#03050d"/>
+<stop offset="0%" stop-color="#172554"/>
+<stop offset="55%" stop-color="#0b1023"/>
+<stop offset="100%" stop-color="#03050d"/>
 </radialGradient>
-
 <filter id="glow">
-  <feGaussianBlur stdDeviation="4" result="blur"/>
-  <feMerge>
-    <feMergeNode in="blur"/>
-    <feMergeNode in="SourceGraphic"/>
-  </feMerge>
+<feGaussianBlur stdDeviation="4" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
 </filter>
-
 <filter id="bigGlow">
-  <feGaussianBlur stdDeviation="18"/>
+<feGaussianBlur stdDeviation="18"/>
 </filter>
-
-<pattern id="grid"
-         width="32"
-         height="32"
-         patternUnits="userSpaceOnUse">
-  <path d="M32 0H0V32" fill="none" stroke="#334155" stroke-opacity=".12"/>
+<pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+<path d="M36 0H0V36" fill="none" stroke="#334155" stroke-opacity=".1"/>
 </pattern>
-
 <style>
 .mono{ font-family:"Courier New",monospace; }
 .cyan{ fill:#22d3ee; }
@@ -55,262 +44,169 @@
 .muted{ fill:#94a3b8; }
 .green{ fill:#4ade80; }
 .pulse{ animation:pulse 2.5s ease-in-out infinite; }
-.float1{ animation:float 5s ease-in-out infinite; }
-.float2{ animation:float 6s ease-in-out infinite reverse; }
 .dash{ animation:dash 3s linear infinite; }
-.spin{ animation:spin 18s linear infinite; transform-origin:860px 355px; }
-.spin2{ animation:spin 12s linear infinite reverse; transform-origin:860px 355px; }
+.spin{ animation:spin 18s linear infinite; transform-origin:900px 320px; }
+.spin2{ animation:spin 12s linear infinite reverse; transform-origin:900px 320px; }
 .blink{ animation:blink 1s steps(2,end) infinite; }
 @keyframes pulse{ 0%,100%{opacity:.45;} 50%{opacity:1;} }
-@keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
 @keyframes dash{ to{stroke-dashoffset:-80;} }
 @keyframes spin{ to{transform:rotate(360deg);} }
 @keyframes blink{ 50%{opacity:0;} }
 </style>
-
 </defs>
 
-<rect width="1200" height="900" rx="30" fill="#03050d"/>
-<rect x="18" y="18" width="1164" height="864" rx="26" fill="url(#bgGlow)" stroke="#26345c" stroke-width="2"/>
-<rect x="18" y="18" width="1164" height="864" rx="26" fill="url(#grid)"/>
+<rect width="1260" height="920" rx="30" fill="#03050d"/>
+<rect x="18" y="18" width="1224" height="884" rx="26" fill="url(#bgGlow)" stroke="#26345c" stroke-width="2"/>
+<rect x="18" y="18" width="1224" height="884" rx="26" fill="url(#grid)"/>
 
-<circle cx="1030" cy="120" r="150" fill="#7c3aed" opacity=".08" filter="url(#bigGlow)"/>
-<circle cx="170" cy="740" r="170" fill="#0891b2" opacity=".07" filter="url(#bigGlow)"/>
+<circle cx="1080" cy="120" r="160" fill="#7c3aed" opacity=".08" filter="url(#bigGlow)"/>
+<circle cx="180" cy="760" r="180" fill="#0891b2" opacity=".07" filter="url(#bigGlow)"/>
 
-<text x="58" y="78" class="mono" font-size="48" font-weight="700" fill="url(#title)">
-SAOU YANIS
-</text>
+<!-- HEADER -->
+<text x="60" y="88" class="mono" font-size="52" font-weight="700" fill="url(#title)">SAOU YANIS</text>
 
-<text x="60" y="112" class="mono cyan" font-size="17">
-FULL STACK DEVELOPER
-•
-USTHB - S2I STUDENT
-•
-WEB &amp; DATABASE ENTHUSIAST
-</text>
+<text x="62" y="122" class="mono cyan" font-size="17">FULL STACK DEVELOPER  •  USTHB - S2I STUDENT  •  WEB &amp; DATABASE ENTHUSIAST</text>
 
-<line x1="58" y1="132" x2="1138" y2="132" stroke="url(#cyanPink)" stroke-width="2"/>
+<line x1="60" y1="145" x2="1200" y2="145" stroke="url(#cyanPink)" stroke-width="2"/>
 
-<path d="M60 150 H290 L315 174 H470 L495 150 H650"
-  fill="none" stroke="#22d3ee" stroke-width="2" stroke-dasharray="10 14" class="dash"/>
+<path d="M62 162 H300 L328 188 H500 L528 162 H700" fill="none" stroke="#22d3ee" stroke-width="2" stroke-dasharray="10 14" class="dash"/>
+<circle cx="700" cy="162" r="5" fill="#e879f9" class="pulse" filter="url(#glow)"/>
 
-<circle cx="650" cy="150" r="5" fill="#e879f9" class="pulse" filter="url(#glow)"/>
+<!-- TERMINAL PANEL -->
+<rect x="50" y="200" width="560" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
 
-<rect x="48" y="185" width="520" height="420" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
+<circle cx="78" cy="228" r="6" fill="#f472b6"/>
+<circle cx="100" cy="228" r="6" fill="#fbbf24"/>
+<circle cx="122" cy="228" r="6" fill="#22d3ee"/>
+<text x="152" y="233" class="mono muted" font-size="13">~/profile/terminal</text>
 
-<circle cx="74" cy="212" r="6" fill="#f472b6"/>
-<circle cx="94" cy="212" r="6" fill="#fbbf24"/>
-<circle cx="114" cy="212" r="6" fill="#22d3ee"/>
+<text x="78" y="272" class="mono cyan" font-size="17" font-weight="700">&gt; whoami</text>
+<text x="100" y="298" class="mono white" font-size="16">Saou Yanis</text>
 
-<text x="142" y="217" class="mono muted" font-size="13">
-~/profile/terminal
-</text>
+<text x="78" y="336" class="mono purple" font-size="17" font-weight="700">&gt; education</text>
+<text x="100" y="362" class="mono white" font-size="15">Étudiant en Informatique - Spécialité S2I</text>
+<text x="100" y="385" class="mono muted" font-size="14">USTHB • Systèmes Informatiques Intelligents</text>
 
-<text x="70" y="255" class="mono cyan" font-size="17">
-&gt; whoami
-</text>
-<text x="90" y="280" class="mono white" font-size="15">
-Saou Yanis
-</text>
+<text x="78" y="424" class="mono cyan" font-size="17" font-weight="700">&gt; stack</text>
+<text x="100" y="450" class="mono white" font-size="14">C • Python • JavaScript • Node.js • React</text>
+<text x="100" y="472" class="mono white" font-size="14">HTML/CSS • PHP • Git/GitHub</text>
+<text x="100" y="494" class="mono white" font-size="14">SQL*Plus • Oracle • Linux Shell</text>
 
-<text x="70" y="316" class="mono purple" font-size="17">
-&gt; education
-</text>
-<text x="90" y="341" class="mono white" font-size="14">
-Étudiant en Informatique - S2I
-</text>
-<text x="90" y="362" class="mono muted" font-size="13">
-USTHB • Systèmes Informatiques Intelligents
-</text>
+<text x="78" y="534" class="mono pink" font-size="17" font-weight="700">&gt; passion</text>
+<text x="100" y="560" class="mono white" font-size="14">Développement Web • Programmation • BDD</text>
 
-<text x="70" y="400" class="mono cyan" font-size="17">
-&gt; stack
-</text>
-<text x="90" y="425" class="mono white" font-size="13">
-C • Python • JavaScript • Node.js • React
-</text>
-<text x="90" y="446" class="mono white" font-size="13">
-HTML/CSS • PHP • Git/GitHub
-</text>
-<text x="90" y="467" class="mono white" font-size="13">
-SQL*Plus • Oracle • Linux Shell
-</text>
+<text x="78" y="596" class="mono green" font-size="15" font-weight="700">&gt; status: ONLINE</text>
+<rect x="238" y="583" width="10" height="18" fill="#22d3ee" class="blink"/>
 
-<text x="70" y="505" class="mono pink" font-size="17">
-&gt; passion
-</text>
-<text x="90" y="530" class="mono white" font-size="13">
-Développement Web • Programmation • Bases de données
-</text>
+<!-- CORE PANEL -->
+<rect x="640" y="200" width="560" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
 
-<text x="70" y="568" class="mono green" font-size="14">
-&gt; status: ONLINE
-</text>
-<rect x="225" y="555" width="9" height="16" fill="#22d3ee" class="blink"/>
-
-<line x1="70" y1="585" x2="520" y2="585" stroke="#172554"/>
-
-<text x="70" y="600" class="mono cyan" font-size="13">
-$ building digital experiences..._
-</text>
-
-<rect x="590" y="185" width="562" height="420" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
-
-<text x="620" y="220" class="mono purple" font-size="15">
-&lt; FULL_STACK_CORE /&gt;
-</text>
+<text x="670" y="238" class="mono purple" font-size="16" font-weight="700">&lt; FULL_STACK_CORE /&gt;</text>
 
 <g class="spin">
-<circle cx="860" cy="355" r="145" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3 14"/>
-<circle cx="860" cy="355" r="112" fill="none" stroke="#c084fc" stroke-width="1" stroke-dasharray="12 10"/>
+<circle cx="900" cy="385" r="140" fill="none" stroke="#22d3ee" stroke-width="1.2" stroke-dasharray="3 14"/>
+<circle cx="900" cy="385" r="108" fill="none" stroke="#c084fc" stroke-width="1.2" stroke-dasharray="12 10"/>
 </g>
 
 <g class="spin2">
-<circle cx="860" cy="355" r="82" fill="none" stroke="#e879f9" stroke-width="1" stroke-dasharray="4 8"/>
+<circle cx="900" cy="385" r="78" fill="none" stroke="#e879f9" stroke-width="1.2" stroke-dasharray="4 8"/>
 </g>
 
-<circle cx="860" cy="355" r="48" fill="#080d1d" stroke="url(#cyanPink)" stroke-width="3" filter="url(#glow)"/>
-
-<text x="833" y="366" class="mono pink" font-size="27">
-&lt;/&gt;
-</text>
+<circle cx="900" cy="385" r="46" fill="#080d1d" stroke="url(#cyanPink)" stroke-width="3" filter="url(#glow)"/>
+<text x="873" y="396" class="mono pink" font-size="26" font-weight="700">&lt;/&gt;</text>
 
 <g fill="none" stroke-width="2" class="dash">
-<path d="M860 307 L860 250 L700 250" stroke="#22d3ee" stroke-dasharray="8 10"/>
-<path d="M908 355 L990 355 L1040 305" stroke="#d946ef" stroke-dasharray="8 10"/>
-<path d="M860 403 L860 455" stroke="#a855f7" stroke-dasharray="8 10"/>
-<path d="M812 355 L760 355 L760 425" stroke="#22d3ee" stroke-dasharray="8 10"/>
+<path d="M900 339 L900 275 L720 275" stroke="#22d3ee" stroke-dasharray="8 10"/>
+<path d="M946 385 L1050 385 L1100 330" stroke="#d946ef" stroke-dasharray="8 10"/>
+<path d="M900 431 L900 480" stroke="#a855f7" stroke-dasharray="8 10"/>
+<path d="M854 385 L800 385 L800 460" stroke="#22d3ee" stroke-dasharray="8 10"/>
 </g>
 
-<g class="float1">
-<rect x="620" y="235" width="150" height="70" rx="14" fill="#090f22" stroke="#22d3ee"/>
-<text x="640" y="260" class="mono cyan" font-size="14">FRONTEND</text>
-<text x="640" y="282" class="mono white" font-size="12">React • HTML/CSS</text>
-</g>
+<!-- FRONTEND -->
+<rect x="670" y="252" width="165" height="72" rx="14" fill="#090f22" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="692" y="280" class="mono cyan" font-size="15" font-weight="700">FRONTEND</text>
+<text x="692" y="305" class="mono white" font-size="13">React • HTML/CSS</text>
 
-<g class="float2">
-<rect x="970" y="270" width="150" height="70" rx="14" fill="#090f22" stroke="#d946ef"/>
-<text x="990" y="295" class="mono pink" font-size="14">BACKEND</text>
-<text x="990" y="317" class="mono white" font-size="12">Node.js • PHP</text>
-</g>
+<!-- BACKEND -->
+<rect x="1035" y="295" width="165" height="72" rx="14" fill="#090f22" stroke="#d946ef" stroke-width="1.5"/>
+<text x="1057" y="323" class="mono pink" font-size="15" font-weight="700">BACKEND</text>
+<text x="1057" y="348" class="mono white" font-size="13">Node.js • PHP</text>
 
-<g class="float1">
-<rect x="615" y="425" width="245" height="100" rx="14" fill="#090f22" stroke="#a855f7"/>
-<text x="635" y="451" class="mono purple" font-size="14" font-weight="700">DATABASES</text>
-<text x="635" y="475" class="mono white" font-size="12">SQL*Plus • Oracle</text>
-<text x="635" y="495" class="mono white" font-size="12">MySQL</text>
-<text x="635" y="515" class="mono muted" font-size="11">Data Management</text>
-</g>
+<!-- DATABASES -->
+<rect x="670" y="460" width="240" height="110" rx="14" fill="#090f22" stroke="#a855f7" stroke-width="1.5"/>
+<text x="692" y="488" class="mono purple" font-size="15" font-weight="700">DATABASES</text>
+<text x="692" y="513" class="mono white" font-size="13">SQL*Plus • Oracle</text>
+<text x="692" y="535" class="mono white" font-size="13">MySQL • Data Management</text>
 
-<g class="float2">
-<rect x="875" y="425" width="245" height="100" rx="14" fill="#090f22" stroke="#22d3ee"/>
-<text x="895" y="451" class="mono cyan" font-size="14" font-weight="700">SYSTEMS</text>
-<text x="895" y="475" class="mono white" font-size="12">C • Python</text>
-<text x="895" y="495" class="mono white" font-size="12">Linux Shell</text>
-<text x="895" y="515" class="mono muted" font-size="11">Low-Level Programming</text>
-</g>
+<!-- SYSTEMS -->
+<rect x="930" y="460" width="240" height="110" rx="14" fill="#090f22" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="952" y="488" class="mono cyan" font-size="15" font-weight="700">SYSTEMS</text>
+<text x="952" y="513" class="mono white" font-size="13">C • Python</text>
+<text x="952" y="535" class="mono white" font-size="13">Linux Shell • Low-Level</text>
 
+<!-- PARTICLES -->
 <g fill="#22d3ee">
-<circle cx="610" cy="330" r="2" class="pulse"/>
-<circle cx="690" cy="205" r="2" class="pulse"/>
-<circle cx="1040" cy="210" r="2" class="pulse"/>
-<circle cx="1110" cy="390" r="2" class="pulse"/>
-<circle cx="900" cy="560" r="2" class="pulse"/>
-<circle cx="650" cy="550" r="2" class="pulse"/>
+<circle cx="640" cy="350" r="2" class="pulse"/>
+<circle cx="740" cy="220" r="2" class="pulse"/>
+<circle cx="1130" cy="230" r="2" class="pulse"/>
+<circle cx="1190" cy="420" r="2" class="pulse"/>
+<circle cx="950" cy="600" r="2" class="pulse"/>
+<circle cx="700" cy="590" r="2" class="pulse"/>
 </g>
-
 <g fill="#e879f9">
-<circle cx="735" cy="195" r="2" class="pulse"/>
-<circle cx="1070" cy="420" r="2" class="pulse"/>
-<circle cx="815" cy="545" r="2" class="pulse"/>
-<circle cx="930" cy="205" r="2" class="pulse"/>
+<circle cx="800" cy="210" r="2" class="pulse"/>
+<circle cx="1160" cy="460" r="2" class="pulse"/>
+<circle cx="860" cy="585" r="2" class="pulse"/>
 </g>
 
-<text x="58" y="650" class="mono" font-size="18" font-weight="700" fill="url(#title)">
-SELECTED PROJECTS
-</text>
+<!-- PROJECTS TITLE -->
+<text x="60" y="685" class="mono" font-size="24" font-weight="700" fill="#22d3ee" filter="url(#glow)">SELECTED PROJECTS</text>
 
-<rect x="48" y="675" width="340" height="120" rx="16" fill="#080d1d" stroke="#26345c"/>
-<text x="68" y="703" class="mono cyan" font-size="14" font-weight="700">
-01 / NAFTALCARD WEB APP
-</text>
-<text x="68" y="726" class="mono white" font-size="11.5">
-Projet de Fin d'Études (PFE)
-</text>
-<text x="68" y="747" class="mono muted" font-size="11.5">
-Gestion cartes NAFTALCARD
-</text>
-<text x="68" y="768" class="mono muted" font-size="11.5">
-Backend • Frontend • Base de données
-</text>
-<text x="68" y="789" class="mono purple" font-size="10.5">
-TPE CIB INTEGRATION
-</text>
+<!-- PROJECT 1 -->
+<rect x="50" y="710" width="370" height="135" rx="16" fill="url(#cardGrad)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="72" y="744" class="mono cyan" font-size="17" font-weight="700">01 / NAFTALCARD</text>
+<text x="72" y="770" class="mono white" font-size="14">Web App - Projet de Fin d'Études</text>
+<text x="72" y="794" class="mono muted" font-size="13">Gestion cartes NAFTALCARD</text>
+<text x="72" y="818" class="mono muted" font-size="13">Backend • Frontend • BDD • TPE CIB</text>
 
-<rect x="405" y="675" width="340" height="120" rx="16" fill="#080d1d" stroke="#26345c"/>
-<text x="425" y="703" class="mono pink" font-size="14" font-weight="700">
-02 / HADJ PLATFORM
-</text>
-<text x="425" y="726" class="mono white" font-size="11.5">
-Plateforme de gestion &amp; tirages
-</text>
-<text x="425" y="747" class="mono muted" font-size="11.5">
-Gestion utilisateurs • Espace admin
-</text>
-<text x="425" y="768" class="mono muted" font-size="11.5">
-PHP • MySQL
-</text>
-<text x="425" y="789" class="mono purple" font-size="10.5">
-WEB PLATFORM
-</text>
+<!-- PROJECT 2 -->
+<rect x="445" y="710" width="370" height="135" rx="16" fill="url(#cardGrad)" stroke="#d946ef" stroke-width="1.5"/>
+<text x="467" y="744" class="mono pink" font-size="17" font-weight="700">02 / HADJ PLATFORM</text>
+<text x="467" y="770" class="mono white" font-size="14">Plateforme gestion &amp; tirages</text>
+<text x="467" y="794" class="mono muted" font-size="13">Gestion utilisateurs • Espace admin</text>
+<text x="467" y="818" class="mono muted" font-size="13">PHP • MySQL</text>
 
-<rect x="762" y="675" width="390" height="120" rx="16" fill="#080d1d" stroke="#26345c"/>
-<text x="782" y="703" class="mono purple" font-size="14" font-weight="700">
-03 / 2048 GAME + ASSEMBLY CALC
-</text>
-<text x="782" y="726" class="mono white" font-size="11.5">
-Jeu 2048 (C + SDL2) • Calculatrice x86
-</text>
-<text x="782" y="747" class="mono muted" font-size="11.5">
-Mode joueur + mode machine auto
-</text>
-<text x="782" y="768" class="mono muted" font-size="11.5">
-Interface graphique • Son • Design
-</text>
-<text x="782" y="789" class="mono cyan" font-size="10.5">
-LOW-LEVEL &amp; GAME DEV
-</text>
+<!-- PROJECT 3 -->
+<rect x="840" y="710" width="370" height="135" rx="16" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.5"/>
+<text x="862" y="744" class="mono purple" font-size="17" font-weight="700">03 / 2048 + ASSEMBLY</text>
+<text x="862" y="770" class="mono white" font-size="14">Jeu 2048 (C+SDL2) • Calc x86</text>
+<text x="862" y="794" class="mono muted" font-size="13">Mode joueur + mode machine</text>
+<text x="862" y="818" class="mono muted" font-size="13">Interface graphique • Son • Design</text>
 
-<line x1="48" y1="825" x2="1152" y2="825" stroke="#26345c"/>
-
-<text x="60" y="855" class="mono muted" font-size="13">CONNECT</text>
+<!-- FOOTER -->
+<line x1="50" y1="870" x2="1210" y2="870" stroke="#26345c"/>
+<text x="62" y="898" class="mono muted" font-size="13">CONNECT</text>
 
 <a href="https://github.com/yanis-saou">
-<circle cx="145" cy="850" r="22" fill="#0b1023" stroke="#22d3ee"/>
-<g transform="translate(132 837) scale(.027)" fill="#22d3ee">
+<circle cx="150" cy="893" r="20" fill="#0b1023" stroke="#22d3ee"/>
+<g transform="translate(138 881) scale(.025)" fill="#22d3ee">
 <path d="M512 32C247 32 32 247 32 512c0 212.2 137.6 392.1 328.4 455.7 24 4.4 32.8-10.4 32.8-23.1 0-11.5-.4-41.9-.7-82.3-133.6 29-161.9-64.4-161.9-64.4-21.8-55.5-53.3-70.3-53.3-70.3-43.6-29.8 3.3-29.2 3.3-29.2 48.2 3.4 73.6 49.5 73.6 49.5 42.8 73.4 112.2 52.2 139.5 39.9 4.3-31 16.7-52.2 30.4-64.2-106.7-12.1-218.8-53.3-218.8-237.2 0-52.4 18.7-95.2 49.4-128.8-5-12.1-21.4-60.9 4.7-127 0 0 40.3-12.9 132.1 49.2 38.3-10.6 79.4-15.9 120.3-16.1 40.9.2 82 5.5 120.3 16.1 91.8-62.1 132-49.2 132-49.2 26.2 66.1 9.8 114.9 4.8 127 30.8 33.6 49.4 76.4 49.4 128.8 0 184.3-112.3 224.9-219.2 236.8 17.2 14.8 32.6 43.9 32.6 88.5 0 63.9-.6 115.4-.6 131.1 0 12.8 8.7 27.6 33 23C874.5 904 1008 724 1008 512 1008 247 793 32 528 32h-16z"/>
 </g>
 </a>
 
 <a href="https://www.linkedin.com/in/yanis-saou/">
-<circle cx="200" cy="850" r="22" fill="#0b1023" stroke="#818cf8"/>
-<rect x="188" y="845" width="5" height="15" rx="1" fill="#818cf8"/>
-<circle cx="190.5" cy="840" r="2.5" fill="#818cf8"/>
-<path d="M197 845h5v2.1c1.5-1.8 3.4-2.7 5.9-2.7 5 0 7.1 3 7.1 8.1V860h-5.2v-6.8c0-2.4 0-5.4-3.3-5.4-3.3 0-3.8 2.6-3.8 5.2v7H197z" fill="#818cf8"/>
+<circle cx="205" cy="893" r="20" fill="#0b1023" stroke="#818cf8"/>
+<rect x="194" y="889" width="5" height="14" rx="1" fill="#818cf8"/>
+<circle cx="196.5" cy="884" r="2.5" fill="#818cf8"/>
+<path d="M203 889h5v2c1.5-1.7 3.2-2.5 5.5-2.5 4.5 0 6.5 2.8 6.5 7.5v7h-5.5v-6.8c0-2.2 0-5-3-5-3 0-3.5 2.4-3.5 4.8v7h-5.5z" fill="#818cf8"/>
 </a>
 
 <a href="mailto:saouyanis16@gmail.com">
-<circle cx="255" cy="850" r="22" fill="#0b1023" stroke="#4ade80"/>
-<path d="M243 843h24v14h-24z" fill="none" stroke="#4ade80" stroke-width="2"/>
-<path d="M244 844l11 8 11-8" fill="none" stroke="#4ade80" stroke-width="2"/>
+<circle cx="260" cy="893" r="20" fill="#0b1023" stroke="#4ade80"/>
+<path d="M248 887h24v13h-24z" fill="none" stroke="#4ade80" stroke-width="2"/>
+<path d="M249 888l11 7 11-7" fill="none" stroke="#4ade80" stroke-width="2"/>
 </a>
 
-<text x="295" y="855" class="mono" font-size="13" fill="#64748b">
-Code • Design • Visualize • Create
-</text>
-
-<text x="900" y="855" class="mono cyan" font-size="12">
-[ SYSTEM ONLINE ]
-</text>
-
+<text x="300" y="899" class="mono" font-size="13" fill="#64748b">Code • Design • Visualize • Create</text>
+<text x="1050" y="899" class="mono cyan" font-size="13" font-weight="700">[ SYSTEM ONLINE ]</text>
 </svg>
