@@ -86,7 +86,7 @@ FULL STACK DEVELOPER
 •
 USTHB - S2I STUDENT
 •
-WEB & DATABASE ENTHUSIAST
+WEB &amp; DATABASE ENTHUSIAST
 </text>
 
 <line x1="58" y1="132" x2="1138" y2="132" stroke="url(#cyanPink)" stroke-width="2"/>
@@ -252,7 +252,7 @@ TPE CIB INTEGRATION
 02 / HADJ PLATFORM
 </text>
 <text x="425" y="726" class="mono white" font-size="11.5">
-Plateforme de gestion & tirages
+Plateforme de gestion &amp; tirages
 </text>
 <text x="425" y="747" class="mono muted" font-size="11.5">
 Gestion utilisateurs • Espace admin
@@ -278,7 +278,7 @@ Mode joueur + mode machine auto
 Interface graphique • Son • Design
 </text>
 <text x="782" y="789" class="mono cyan" font-size="10.5">
-LOW-LEVEL & GAME DEV
+LOW-LEVEL &amp; GAME DEV
 </text>
 
 <line x1="48" y1="825" x2="1152" y2="825" stroke="#26345c"/>
