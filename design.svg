@@ -45,8 +45,8 @@
 .green{ fill:#4ade80; }
 .pulse{ animation:pulse 2.5s ease-in-out infinite; }
 .dash{ animation:dash 3s linear infinite; }
-.spin{ animation:spin 18s linear infinite; transform-origin:450px 720px; }
-.spin2{ animation:spin 12s linear infinite reverse; transform-origin:450px 720px; }
+.spin{ animation:spin 18s linear infinite; transform-origin:450px 755px; }
+.spin2{ animation:spin 12s linear infinite reverse; transform-origin:450px 755px; }
 .blink{ animation:blink 1s steps(2,end) infinite; }
 @keyframes pulse{ 0%,100%{opacity:.45;} 50%{opacity:1;} }
 @keyframes dash{ to{stroke-dashoffset:-80;} }
@@ -89,7 +89,7 @@
 <text x="66" y="505" class="mono pink" font-size="18" font-weight="700">&gt; passion</text>
 <text x="88" y="530" class="mono white" font-size="15">Développement Web • Programmation • BDD</text>
 
-<!-- STATUS ONLINE + building -->
+<!-- STATUS ONLINE -->
 <text x="66" y="565" class="mono green" font-size="15" font-weight="700">&gt; status: ONLINE</text>
 <rect x="232" y="551" width="10" height="17" fill="#22d3ee" class="blink"/>
 <line x1="66" y1="578" x2="835" y2="578" stroke="#172554"/>
@@ -109,6 +109,15 @@
 <circle cx="450" cy="755" r="40" fill="#080d1d" stroke="url(#cyanPink)" stroke-width="3" filter="url(#glow)"/>
 <text x="429" y="764" class="mono pink" font-size="22" font-weight="700">&lt;/&gt;</text>
 
+<!-- LIGNES DYNAMIQUES vers le centre -->
+<g fill="none" stroke-width="1.5" class="dash">
+<path d="M450 715 L450 690 L250 690" stroke="#22d3ee" stroke-dasharray="6 8"/>
+<path d="M490 755 L620 755 L720 720" stroke="#d946ef" stroke-dasharray="6 8"/>
+<path d="M450 795 L450 855 L250 855" stroke="#a855f7" stroke-dasharray="6 8"/>
+<path d="M410 755 L350 755 L250 830" stroke="#22d3ee" stroke-dasharray="6 8"/>
+</g>
+
+<!-- Cartes autour -->
 <rect x="70" y="685" width="180" height="65" rx="12" fill="#090f22" stroke="#22d3ee" stroke-width="1.5"/>
 <text x="88" y="712" class="mono cyan" font-size="14" font-weight="700">FRONTEND</text>
 <text x="88" y="735" class="mono white" font-size="12">React • HTML/CSS</text>
@@ -141,204 +150,35 @@
 <text x="480" y="1015" class="mono pink" font-size="16" font-weight="700">02 / HADJ PLATFORM</text>
 <text x="480" y="1038" class="mono white" font-size="13">Plateforme gestion &amp; tirages</text>
 <text x="480" y="1060" class="mono muted" font-size="12">Gestion utilisateurs • Espace admin</text>
-<text x="480" y="1060" class="mono muted" font-size="12">PHP • MySQL</text>
 
-<!-- PROJET 3 (bas centré large) -->
+<!-- PROJET 3 (centré) -->
 <rect x="180" y="1085" width="540" height="80" rx="14" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.5"/>
 <text x="200" y="1115" class="mono purple" font-size="16" font-weight="700">03 / 2048 GAME</text>
 <text x="200" y="1138" class="mono white" font-size="13">Jeu de navigateur interactif (C + SDL2)</text>
 <text x="200" y="1158" class="mono muted" font-size="12">Mode joueur + mode machine • scoring • son • UI</text>
 
-<!-- BADGES SOCIAUX -->
+<!-- BADGES SOCIAUX CENTRÉS -->
 <g>
   <!-- GITHUB -->
-  <rect x="215" y="1195" width="150" height="32" rx="5" fill="#181717"/>
-  <g transform="translate(228 1203) scale(.017)" fill="white">
+  <rect x="160" y="1195" width="170" height="32" rx="5" fill="#181717"/>
+  <g transform="translate(175 1203) scale(.017)" fill="white">
     <path d="M512 32C247 32 32 247 32 512c0 212.2 137.6 392.1 328.4 455.7 24 4.4 32.8-10.4 32.8-23.1 0-11.5-.4-41.9-.7-82.3-133.6 29-161.9-64.4-161.9-64.4-21.8-55.5-53.3-70.3-53.3-70.3-43.6-29.8 3.3-29.2 3.3-29.2 48.2 3.4 73.6 49.5 73.6 49.5 42.8 73.4 112.2 52.2 139.5 39.9 4.3-31 16.7-52.2 30.4-64.2-106.7-12.1-218.8-53.3-218.8-237.2 0-52.4 18.7-95.2 49.4-128.8-5-12.1-21.4-60.9 4.7-127 0 0 40.3-12.9 132.1 49.2 38.3-10.6 79.4-15.9 120.3-16.1 40.9.2 82 5.5 120.3 16.1 91.8-62.1 132-49.2 132-49.2 26.2 66.1 9.8 114.9 4.8 127 30.8 33.6 49.4 76.4 49.4 128.8 0 184.3-112.3 224.9-219.2 236.8 17.2 14.8 32.6 43.9 32.6 88.5 0 63.9-.6 115.4-.6 131.1 0 12.8 8.7 27.6 33 23C874.5 904 1008 724 1008 512 1008 247 793 32 528 32h-16z"/>
   </g>
-  <text x="258" y="1217" class="mono" font-size="15" font-weight="700" fill="white">GITHUB</text>
+  <text x="205" y="1217" class="mono" font-size="15" font-weight="700" fill="white">GITHUB</text>
 
   <!-- LINKEDIN -->
-  <rect x="375" y="1195" width="150" height="32" rx="5" fill="#0A66C2"/>
-  <rect x="390" y="1204" width="7" height="14" rx="1" fill="white"/>
-  <circle cx="393.5" cy="1199" r="2.5" fill="white"/>
-  <path d="M400 1204h5v2c1.5-1.7 3.2-2.5 5.5-2.5 4.5 0 6.5 2.8 6.5 7.5v7h-5.5v-6.8c0-2.2 0-5-3-5-3 0-3.5 2.4-3.5 4.8v7H400z" fill="white"/>
-  <text x="420" y="1217" class="mono" font-size="15" font-weight="700" fill="white">LINKEDIN</text>
+  <rect x="350" y="1195" width="180" height="32" rx="5" fill="#0A66C2"/>
+  <rect x="365" y="1204" width="7" height="14" rx="1" fill="white"/>
+  <circle cx="368.5" cy="1199" r="2.5" fill="white"/>
+  <path d="M375 1204h5v2c1.5-1.7 3.2-2.5 5.5-2.5 4.5 0 6.5 2.8 6.5 7.5v7h-5.5v-6.8c0-2.2 0-5-3-5-3 0-3.5 2.4-3.5 4.8v7H375z" fill="white"/>
+  <text x="398" y="1217" class="mono" font-size="15" font-weight="700" fill="white">LINKEDIN</text>
 
   <!-- INSTAGRAM -->
-  <rect x="535" y="1195" width="155" height="32" rx="5" fill="#E4405F"/>
-  <rect x="548" y="1203" width="16" height="16" rx="4" fill="none" stroke="white" stroke-width="2"/>
-  <circle cx="556" cy="1211" r="4" fill="none" stroke="white" stroke-width="2"/>
-  <circle cx="562" cy="1205" r="1.5" fill="white"/>
-  <text x="573" y="1217" class="mono" font-size="15" font-weight="700" fill="white">INSTAGRAM</text>
+  <rect x="550" y="1195" width="190" height="32" rx="5" fill="#E4405F"/>
+  <rect x="563" y="1203" width="16" height="16" rx="4" fill="none" stroke="white" stroke-width="2"/>
+  <circle cx="571" cy="1211" r="4" fill="none" stroke="white" stroke-width="2"/>
+  <circle cx="577" cy="1205" r="1.5" fill="white"/>
+  <text x="590" y="1217" class="mono" font-size="15" font-weight="700" fill="white">INSTAGRAM</text>
 </g>
-<line
-  x1="48"
-  y1="825"
-  x2="1152"
-  y2="825"
-  stroke="#26345c"/>
-
-
-<text
-  x="60"
-  y="855"
-  class="mono muted"
-  font-size="13">
-
-CONNECT
-
-</text>
-
-
-<!-- GITHUB -->
-
-<a href="https://github.com/YOUR_USERNAME">
-
-<circle
-  cx="145"
-  cy="850"
-  r="22"
-  fill="#0b1023"
-  stroke="#22d3ee"/>
-
-<!-- Octocat -->
-
-<g
-  transform="translate(132 837) scale(.027)"
-  fill="#22d3ee">
-
-<path
-d="M512 32C247 32 32 247 32 512c0 212.2 137.6 392.1 328.4 455.7 24 4.4 32.8-10.4 32.8-23.1 0-11.5-.4-41.9-.7-82.3-133.6 29-161.9-64.4-161.9-64.4-21.8-55.5-53.3-70.3-53.3-70.3-43.6-29.8 3.3-29.2 3.3-29.2 48.2 3.4 73.6 49.5 73.6 49.5 42.8 73.4 112.2 52.2 139.5 39.9 4.3-31 16.7-52.2 30.4-64.2-106.7-12.1-218.8-53.3-218.8-237.2 0-52.4 18.7-95.2 49.4-128.8-5-12.1-21.4-60.9 4.7-127 0 0 40.3-12.9 132.1 49.2 38.3-10.6 79.4-15.9 120.3-16.1 40.9.2 82 5.5 120.3 16.1 91.8-62.1 132-49.2 132-49.2 26.2 66.1 9.8 114.9 4.8 127 30.8 33.6 49.4 76.4 49.4 128.8 0 184.3-112.3 224.9-219.2 236.8 17.2 14.8 32.6 43.9 32.6 88.5 0 63.9-.6 115.4-.6 131.1 0 12.8 8.7 27.6 33 23C874.5 904 1008 724 1008 512 1008 247 793 32 528 32h-16z"/>
-
-</g>
-
-</a>
-
-
-<!-- LINKEDIN -->
-
-<a href="https://www.linkedin.com/in/YOUR_USERNAME/">
-
-<circle
-  cx="200"
-  cy="850"
-  r="22"
-  fill="#0b1023"
-  stroke="#818cf8"/>
-
-
-<!-- LinkedIn logo -->
-
-<rect
-  x="188"
-  y="845"
-  width="5"
-  height="15"
-  rx="1"
-  fill="#818cf8"/>
-
-<circle
-  cx="190.5"
-  cy="840"
-  r="2.5"
-  fill="#818cf8"/>
-
-<path
-  d="M197 845h5v2.1c1.5-1.8 3.4-2.7 5.9-2.7 5 0 7.1 3 7.1 8.1V860h-5.2v-6.8c0-2.4 0-5.4-3.3-5.4-3.3 0-3.8 2.6-3.8 5.2v7H197z"
-  fill="#818cf8"/>
-
-</a>
-
-
-<!-- INSTAGRAM -->
-
-<a href="https://instagram.com/YOUR_USERNAME">
-
-<circle
-  cx="255"
-  cy="850"
-  r="22"
-  fill="#0b1023"
-  stroke="#e879f9"/>
-
-
-<!-- Instagram logo -->
-
-<rect
-  x="242"
-  y="837"
-  width="26"
-  height="26"
-  rx="7"
-  fill="none"
-  stroke="#e879f9"
-  stroke-width="3"/>
-
-<circle
-  cx="255"
-  cy="850"
-  r="6"
-  fill="none"
-  stroke="#e879f9"
-  stroke-width="3"/>
-
-<circle
-  cx="263"
-  cy="842"
-  r="2"
-  fill="#e879f9"/>
-
-</a>
-
-
-<!-- EMAIL -->
-
-<a href="mailto:YOUR_EMAIL@example.com">
-
-<circle
-  cx="310"
-  cy="850"
-  r="22"
-  fill="#0b1023"
-  stroke="#4ade80"/>
-
-<path
-  d="M298 843h24v14h-24z"
-  fill="none"
-  stroke="#4ade80"
-  stroke-width="2"/>
-
-<path
-  d="M299 844l11 8 11-8"
-  fill="none"
-  stroke="#4ade80"
-  stroke-width="2"/>
-
-</a>
-
-
-<text
-  x="350"
-  y="855"
-  class="mono"
-  font-size="13"
-  fill="#64748b">
-
-Code • Design • Visualize • Create
-
-</text>
-
-
-<text
-  x="900"
-  y="855"
-  class="mono cyan"
-  font-size="12">
-
-[ SYSTEM ONLINE ]
-
-</text>
-
 
 </svg>
