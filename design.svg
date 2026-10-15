@@ -73,8 +73,7 @@
 <circle cx="700" cy="162" r="5" fill="#e879f9" class="pulse" filter="url(#glow)"/>
 
 <!-- TERMINAL PANEL -->
-<rect x="50" y="200" width="560" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
-
+<rect x="50" y="200" width="600" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
 <circle cx="78" cy="228" r="6" fill="#f472b6"/>
 <circle cx="100" cy="228" r="6" fill="#fbbf24"/>
 <circle cx="122" cy="228" r="6" fill="#22d3ee"/>
@@ -99,7 +98,7 @@
 <rect x="238" y="583" width="10" height="18" fill="#22d3ee" class="blink"/>
 
 <!-- CORE PANEL -->
-<rect x="640" y="200" width="560" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
+<rect x="675" y="200" width="525" height="430" rx="20" fill="url(#panel)" stroke="#334269" stroke-width="2"/>
 
 <text x="670" y="238" class="mono purple" font-size="16" font-weight="700">&lt; FULL_STACK_CORE /&gt;</text>
 
